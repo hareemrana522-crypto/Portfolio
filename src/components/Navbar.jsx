@@ -33,9 +33,9 @@ const Navbar = ({ isDark, toggleTheme }) => {
           <a href="#contact" className="btn-primary-sm" onClick={handleLinkClick}>Hire Me</a>
         </nav>
         <div className="theme-toggle" onClick={toggleTheme}>
-          <i className={`fa-solid ${isDark ? 'fa-sun' : 'fa-moon'}`}></i>
+          <i className={`fa-solid ${isDark ? 'fa-moon' : 'fa-sun'}`}></i>
         </div>
-        <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div className="menu-toggle" id="mobile-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <i className="fa-solid fa-bars"></i>
         </div>
       </div>

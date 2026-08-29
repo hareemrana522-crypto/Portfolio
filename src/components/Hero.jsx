@@ -1,29 +1,77 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Hero = () => {
+  const typingRef = useRef(null);
+  
+  useEffect(() => {
+    const strings = ["Web Developer", "Excel VBA Expert", "Automation Specialist"];
+    let stringIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+    let timeoutId;
+
+    const type = () => {
+      if (!typingRef.current) return;
+      
+      const currentString = strings[stringIndex];
+      
+      if (isDeleting) {
+        typingRef.current.textContent = currentString.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 50;
+      } else {
+        typingRef.current.textContent = currentString.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 100;
+      }
+
+      if (!isDeleting && charIndex === currentString.length) {
+        isDeleting = true;
+        typingSpeed = 1500; // Pause at end
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        stringIndex = (stringIndex + 1) % strings.length;
+        typingSpeed = 500; // Pause before typing next
+      }
+
+      timeoutId = setTimeout(type, typingSpeed);
+    };
+
+    timeoutId = setTimeout(type, typingSpeed);
+    
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
     <section id="home" className="hero">
-      <div className="hero-content reveal">
-        <span className="subtitle">Welcome to my world</span>
-        <h1>Hi, I'm <span className="highlight">Aqsa Wazeer</span></h1>
-        <h2 className="typing-text">Web Developer & Automation Expert</h2>
-        <p className="desc-text">I design and build production-grade web applications, and end-to-end Excel VBA automation systems that eliminate manual work and scale business operations.</p>
-        
-        <div className="hero-buttons">
-          <a href="#contact" className="btn btn-primary">Hire Me</a>
-          <a href="Aqsa_Wazeer_CV (3).docx" download className="btn btn-secondary"><i className="fa-solid fa-download"></i> Resume</a>
-        </div>
+      <div className="hero-container">
+        <div className="hero-content reveal">
+            <h3 className="hello-text">Hello, It's Me</h3>
+            <h1 className="name-text">Aqsa Wazeer</h1>
+            <h2 className="role-text">
+                And I'm a <span className="highlight typed-block">
+                    <span className="typing-text" ref={typingRef}></span><span className="cursor"></span>
+                </span>
+            </h2>
+            <p className="desc-text">I design and build production-grade web applications, and end-to-end Excel VBA automation systems that eliminate manual work and scale business operations.</p>
+            
+            <div className="hero-buttons">
+                <a href="#contact" className="btn btn-primary">Hire Me</a>
+                <a href="Aqsa_Wazeer_CV (3).docx" download className="btn btn-secondary"><i className="fa-solid fa-download"></i> Resume</a>
+            </div>
 
-        <div className="social-links circle-links">
-          <a href="#"><i className="fa-brands fa-github"></i></a>
-          <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i className="fa-brands fa-upwork"></i></a>
+            <div className="social-links circle-links">
+                <a href="https://www.linkedin.com/in/aqsa-wazeer-a899b6417" target="_blank" title="LinkedIn" rel="noreferrer"><i className="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/hareemrana522-crypto" target="_blank" title="GitHub" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/message/FQJ6FZHLEUMCH1" target="_blank" title="WhatsApp" rel="noreferrer"><i className="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:hareemrana522@gmail.com" title="Email Me"><i className="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
-      </div>
-
-      <div className="hero-image reveal">
-        <div className="image-container">
-          <img src="profile.jpg.png" alt="Aqsa Wazeer" />
+        <div className="hero-image reveal">
+            <div className="image-container">
+                <img src="profile.jpg.png" alt="Aqsa Wazeer" />
+            </div>
         </div>
       </div>
     </section>
