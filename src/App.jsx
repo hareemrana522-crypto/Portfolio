@@ -31,6 +31,8 @@ function App() {
         const elementTop = reveal.getBoundingClientRect().top;
         if (elementTop < windowHeight - elementVisible) {
           reveal.classList.add('active');
+        } else {
+          reveal.classList.remove('active');
         }
       });
     };
