@@ -19,15 +19,15 @@
 
 [data-theme="light"] {
     /* LIGHT MODE */
-    --bg-color: #F8FAFC;
-    --surface-color: #FFFFFF;
-    --surface-color-2: #F1F5F9;
+    --bg-color: #EAEAEA;
+    --surface-color: #F6F6F6;
+    --surface-color-2: #E0E0E0;
     --primary-color: #FF5A36;
-    --primary-glow: rgba(255, 90, 54, 0.2);
+    --primary-glow: rgba(255, 90, 54, 0.15);
     --secondary-color: #1F5C41;
-    --text-main: #0F172A;
-    --text-muted: #475569;
-    --border-color: #E2E8F0;
+    --text-main: #1F2937;
+    --text-muted: #4B5563;
+    --border-color: #D1D5DB;
 }
 
 /* ==== RESET & BASE ==== */
