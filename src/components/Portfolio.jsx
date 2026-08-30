@@ -47,17 +47,16 @@ const Portfolio = () => {
             </div>
             
             <div className="project-card glass reveal">
-              <div className="project-image">
-                <div style={{ width: '100%', height: '200px', background: 'rgba(111, 255, 176, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--secondary-color)', fontSize: '3rem' }}>
-                  <i className="fa-solid fa-chart-line"></i>
-                </div>
+              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="dummy_web.jpg" alt="E-Commerce Analytics Dashboard" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <div className="project-info">
-                <h4>SaaS Analytics Dashboard</h4>
+                <h4>E-Commerce Analytics Dashboard</h4>
                 <p>Modern, responsive landing page and dashboard interface built with Tailwind CSS and JavaScript.</p>
                 <div className="skill-tags" style={{ justifyContent: 'flex-start', marginBottom: '1rem' }}>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Tailwind</span>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>JS</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>React</span>
                 </div>
                 <a href="#" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
               </div>
@@ -85,17 +84,16 @@ const Portfolio = () => {
             </div>
             
             <div className="project-card glass reveal">
-              <div className="project-image">
-                <div style={{ width: '100%', height: '200px', background: 'rgba(255, 90, 54, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary-color)', fontSize: '3rem' }}>
-                  <i className="fa-solid fa-file-invoice-dollar"></i>
-                </div>
+              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="dummy_vba.jpg" alt="Corporate Financial Reporting Tool" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <div className="project-info">
-                <h4>Financial Report Generator</h4>
+                <h4>Corporate Financial Reporting Tool</h4>
                 <p>Automated macro script that consolidates 50+ Excel sheets into one unified financial report in seconds.</p>
                 <div className="skill-tags" style={{ justifyContent: 'flex-start', marginBottom: '1rem' }}>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Power Query</span>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>VBA</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Macros</span>
                 </div>
                 <a href="#" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
               </div>
