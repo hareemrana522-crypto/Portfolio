@@ -535,7 +535,7 @@ section {
 
 .service-card {
     padding: 2.5rem;
-    text-align: center;
+    text-align: left;
     transition: var(--transition);
 }
 
@@ -544,25 +544,29 @@ section {
     border-color: var(--primary-color);
 }
 
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
 .icon-wrapper {
-    width: 70px;
-    height: 70px;
-    border-radius: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
     background: rgba(255, 90, 54, 0.1);
     color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    margin: 0 auto 1.5rem auto;
+    font-size: 1.5rem;
     transition: var(--transition);
 }
 
 .icon-wrapper.mint {
     background: rgba(111, 255, 176, 0.1);
-    color: var(--secondary-color);
 }
-
 .service-card:hover .icon-wrapper {
     background: var(--primary-color);
     color: #fff;
@@ -574,14 +578,14 @@ section {
 
 .service-card h3 {
     font-size: 1.3rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0;
 }
 
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .skill-badge {

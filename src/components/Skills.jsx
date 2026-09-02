@@ -10,10 +10,12 @@ const Skills = () => {
       <div className="services-grid">
           {/* Skill 1 */}
           <div className="service-card glass reveal">
-              <div className="icon-wrapper">
-                  <i className="fa-solid fa-laptop-code"></i>
+              <div className="card-header">
+                  <div className="icon-wrapper">
+                      <i className="fa-solid fa-laptop-code"></i>
+                  </div>
+                  <h3>Web Development</h3>
               </div>
-              <h3>Web Development</h3>
               <div className="skill-tags">
                   <span className="skill-badge">HTML</span>
                   <span className="skill-badge">CSS</span>
@@ -27,10 +29,12 @@ const Skills = () => {
           
           {/* Skill 2 */}
           <div className="service-card glass reveal">
-              <div className="icon-wrapper mint">
-                  <i className="fa-solid fa-file-excel"></i>
+              <div className="card-header">
+                  <div className="icon-wrapper mint">
+                      <i className="fa-solid fa-file-excel"></i>
+                  </div>
+                  <h3>Excel VBA</h3>
               </div>
-              <h3>Excel VBA</h3>
               <div className="skill-tags">
                   <span className="skill-badge">VBA Macros</span>
                   <span className="skill-badge">Dashboards</span>
@@ -44,10 +48,12 @@ const Skills = () => {
           
           {/* Skill 3 */}
           <div className="service-card glass reveal">
-              <div className="icon-wrapper">
-                  <i className="fa-solid fa-toolbox"></i>
+              <div className="card-header">
+                  <div className="icon-wrapper">
+                      <i className="fa-solid fa-toolbox"></i>
+                  </div>
+                  <h3>Tools & Platforms</h3>
               </div>
-              <h3>Tools & Platforms</h3>
               <div className="skill-tags">
                   <span className="skill-badge">Git & GitHub</span>
                   <span className="skill-badge">VS Code</span>
@@ -62,10 +68,12 @@ const Skills = () => {
 
           {/* Skill 4 */}
           <div className="service-card glass reveal">
-              <div className="icon-wrapper mint">
-                  <i className="fa-brands fa-google"></i>
+              <div className="card-header">
+                  <div className="icon-wrapper mint">
+                      <i className="fa-brands fa-google"></i>
+                  </div>
+                  <h3>Google Workspace</h3>
               </div>
-              <h3>Google Workspace</h3>
               <div className="skill-tags">
                   <span className="skill-badge">Google Sheets</span>
                   <span className="skill-badge">Google Workspace</span>
