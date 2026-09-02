@@ -23,6 +23,12 @@ const Portfolio = () => {
         >
           Excel & VBA
         </button>
+        <button 
+          className={`tab-btn ${activeTab === 'tab-sheets' ? 'active' : ''}`} 
+          onClick={() => setActiveTab('tab-sheets')}
+        >
+          Google Sheets
+        </button>
       </div>
 
       <div className="portfolio-content">
@@ -94,6 +100,27 @@ const Portfolio = () => {
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Power Query</span>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>VBA</span>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Macros</span>
+                </div>
+                <a href="#" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Google Sheets Projects */}
+        <div className={`tab-content ${activeTab === 'tab-sheets' ? 'active' : ''}`} id="tab-sheets">
+          <div className="projects-grid">
+            <div className="project-card glass reveal">
+              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="dummy_sheets.jpg" alt="Automated Inventory Dashboard" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </div>
+              <div className="project-info">
+                <h4>Automated Inventory Dashboard</h4>
+                <p>Real-time Google Sheets dashboard with automated data entry via Google Forms and custom AppScript triggers.</p>
+                <div className="skill-tags" style={{ justifyContent: 'flex-start', marginBottom: '1rem' }}>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Google Sheets</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>AppScript</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Automation</span>
                 </div>
                 <a href="#" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
               </div>
