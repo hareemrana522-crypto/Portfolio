@@ -71,6 +71,7 @@ const Skills = () => {
                   <span className="skill-badge">Google Workspace</span>
                   <span className="skill-badge">Invoice Forms</span>
                   <span className="skill-badge">Google Forms</span>
+                  <span className="skill-badge">AppScript</span>
                   <span className="skill-badge">Automation</span>
               </div>
           </div>
