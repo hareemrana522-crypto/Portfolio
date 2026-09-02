@@ -125,6 +125,22 @@ const Portfolio = () => {
                 <a href="sheets-details.html" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
+
+            <div className="project-card glass reveal">
+              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="dummy_sheets_crm.jpg" alt="Automated CRM & Invoice Generator" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </div>
+              <div className="project-info">
+                <h4>Automated CRM & Invoice Generator</h4>
+                <p>Fully automated client relationship manager built in Google Sheets with one-click PDF invoice generation.</p>
+                <div className="skill-tags" style={{ justifyContent: 'flex-start', marginBottom: '1rem' }}>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Google Sheets</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Google Forms</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>AppScript</span>
+                </div>
+                <a href="#" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
