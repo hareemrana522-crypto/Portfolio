@@ -55,8 +55,9 @@ const Skills = () => {
                   <span className="skill-badge">Vercel</span>
                   <span className="skill-badge">ChatGPT</span>
                   <span className="skill-badge">Figma</span>
-                  <span className="skill-badge">NPM</span>
-                  <span className="skill-badge">DevTools</span>
+                  <span className="skill-badge">Google Sheets</span>
+                  <span className="skill-badge">Google Workspace</span>
+                  <span className="skill-badge">Invoice Forms</span>
               </div>
           </div>
       </div>
