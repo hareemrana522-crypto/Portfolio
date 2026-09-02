@@ -112,7 +112,7 @@ const Portfolio = () => {
           <div className="projects-grid">
             <div className="project-card glass reveal">
               <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="dummy_sheets.jpg" alt="Automated Inventory Dashboard" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src="hr_project_hero.jpg" alt="Automated Inventory Dashboard" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <div className="project-info">
                 <h4>HR Operations & Performance Management System</h4>
