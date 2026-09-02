@@ -36,8 +36,8 @@ const Portfolio = () => {
         <div className={`tab-content ${activeTab === 'tab-web' ? 'active' : ''}`} id="tab-web">
           <div className="projects-grid">
             <div className="project-card glass reveal">
-              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="hashturn_real.png" alt="Hashturn Software House" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="hashturn_real.png" alt="Hashturn Software House" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
                 <h4>Hashturn - Software House</h4>
@@ -53,8 +53,8 @@ const Portfolio = () => {
             </div>
             
             <div className="project-card glass reveal">
-              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="dummy_web.jpg" alt="E-Commerce Analytics Dashboard" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="dummy_web.jpg" alt="E-Commerce Analytics Dashboard" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
                 <h4>E-Commerce Analytics Dashboard</h4>
@@ -74,8 +74,8 @@ const Portfolio = () => {
         <div className={`tab-content ${activeTab === 'tab-vba' ? 'active' : ''}`} id="tab-vba">
           <div className="projects-grid">
             <div className="project-card glass reveal">
-              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="excel_screenshot.jpg" alt="Automated Sales Consolidation Dashboard" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="excel_screenshot.jpg" alt="Automated Sales Consolidation Dashboard" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
                 <h4>Automated Sales Consolidation System</h4>
@@ -90,8 +90,8 @@ const Portfolio = () => {
             </div>
             
             <div className="project-card glass reveal">
-              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="dummy_vba.jpg" alt="Corporate Financial Reporting Tool" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="dummy_vba.jpg" alt="Corporate Financial Reporting Tool" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
                 <h4>Corporate Financial Reporting Tool</h4>
@@ -111,8 +111,8 @@ const Portfolio = () => {
         <div className={`tab-content ${activeTab === 'tab-sheets' ? 'active' : ''}`} id="tab-sheets">
           <div className="projects-grid">
             <div className="project-card glass reveal">
-              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="hr_project_hero.jpg" alt="Automated Inventory Dashboard" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="hr_project_hero.jpg" alt="Automated Inventory Dashboard" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
                 <h4>HR Operations & Performance Management System</h4>
@@ -127,8 +127,8 @@ const Portfolio = () => {
             </div>
 
             <div className="project-card glass reveal">
-              <div className="project-image" style={{ height: '200px', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="dummy_sheets_crm.jpg" alt="Automated CRM & Invoice Generator" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+                <img src="dummy_sheets_crm.jpg" alt="Automated CRM & Invoice Generator" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
                 <h4>Automated CRM & Invoice Generator</h4>
