@@ -15,8 +15,8 @@ const About = () => {
             
             <div className="about-text glass reveal">
                 <h3>Hi, I'm Aqsa.</h3>
-                <p>I am a passionate <strong>Web Developer</strong> and <strong>Excel VBA Expert</strong>. I specialize in bridging the gap between beautiful web interfaces and complex back-office automation.</p>
-                <p>With a unique blend of skills, I don't just build websites that look good—I build systems that save time. Whether you need a modern e-commerce platform or an automated dashboard that cuts your weekly reporting time by 90%, I've got you covered.</p>
+                <p>I am a passionate <strong>Web Developer</strong>, <strong>Excel VBA</strong>, and <strong>Google Sheets Expert</strong>. I specialize in bridging the gap between beautiful web interfaces and complex back-office automation.</p>
+                <p>With a unique blend of skills, I don't just build websites that look good—I build systems that save time. Whether you need a modern web platform or an automated Google Sheets/Excel dashboard that cuts your weekly reporting time by 90%, I've got you covered.</p>
                 
 
                 
