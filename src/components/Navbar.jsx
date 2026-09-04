@@ -29,6 +29,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
           <a href="#home" className="active" onClick={handleLinkClick}>Home</a>
           <a href="#about" onClick={handleLinkClick}>About</a>
           <a href="#skills" onClick={handleLinkClick}>Skills</a>
+          <a href="#services" onClick={handleLinkClick}>Services</a>
           <a href="#portfolio" onClick={handleLinkClick}>Projects</a>
           <a href="#contact" className="btn-primary-sm" onClick={handleLinkClick}>Let's Talk</a>
           <div className="theme-toggle" onClick={toggleTheme}>
