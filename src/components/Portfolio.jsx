@@ -64,7 +64,7 @@ const Portfolio = () => {
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Tailwind</span>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Frontend</span>
                 </div>
-                <a href="https://howtoselfhost.com" target="_blank" rel="noopener noreferrer" className="btn-text">Live Demo <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://vps.howtoselfhost.com/" target="_blank" rel="noopener noreferrer" className="btn-text">Live Demo <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
           </div>
