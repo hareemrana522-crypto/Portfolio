@@ -35,7 +35,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    zoom: 1.25;
 }
 
 html {
@@ -49,6 +48,7 @@ body {
     line-height: 1.6;
     transition: var(--transition);
     overflow-x: hidden;
+    zoom: 1.25;
 }
 
 ::selection {
