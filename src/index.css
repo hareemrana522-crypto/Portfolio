@@ -486,14 +486,12 @@ section {
     height: 450px;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: -15px 15px 40px rgba(111, 255, 176, 0.15), 15px -15px 40px rgba(255, 90, 54, 0.15);
     border: 1px solid var(--border-color);
     transition: var(--transition);
 }
 
 .about-image:hover {
     transform: translateY(-10px) scale(1.02);
-    border-color: var(--secondary-color);
 }
 
 .about-text {
