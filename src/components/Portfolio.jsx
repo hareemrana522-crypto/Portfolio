@@ -54,17 +54,17 @@ const Portfolio = () => {
             
             <div className="project-card glass reveal">
               <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="dummy_web.jpg" alt="E-Commerce Analytics Dashboard" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                <img src="howtoselfhost.png" alt="HowToSelfHost Website" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
-                <h4>E-Commerce Analytics Dashboard</h4>
-                <p>Modern, responsive landing page and dashboard interface built with Tailwind CSS and JavaScript.</p>
+                <h4>howtoselfhost.com</h4>
+                <p>High-performance cloud server hosting platform frontend with modern, sleek UI design.</p>
                 <div className="skill-tags" style={{ justifyContent: 'flex-start', marginBottom: '1rem' }}>
-                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Tailwind</span>
-                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>JS</span>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>React</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Tailwind</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Frontend</span>
                 </div>
-                <a href="#" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
+                <a href="https://howtoselfhost.com" target="_blank" rel="noopener noreferrer" className="btn-text">Live Demo <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
           </div>
