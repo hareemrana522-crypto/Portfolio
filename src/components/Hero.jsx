@@ -58,7 +58,7 @@ const Hero = () => {
             
             <div className="hero-buttons">
                 <a href="#contact" className="btn btn-primary">Hire Me</a>
-                <a href="Aqsa_Wazeer_CV (3).docx" download className="btn btn-secondary"><i className="fa-solid fa-download"></i> Resume</a>
+                <a href="Aqsa_Wazeer_Resume.pdf" download className="btn btn-secondary"><i className="fa-solid fa-download"></i> Resume</a>
             </div>
 
             <div className="social-links circle-links">
