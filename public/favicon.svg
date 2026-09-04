@@ -1,5 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="20" fill="#14161c" stroke="#6FFFB0" stroke-width="4"/>
-  <text x="50" y="72" font-family="Arial, sans-serif" font-size="65" font-weight="bold" fill="#F5F3EE" text-anchor="middle">A</text>
-  <circle cx="80" cy="80" r="6" fill="#6FFFB0" />
+  <defs>
+    <!-- Background Gradient (low opacity) -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5A36" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#6FFFB0" stop-opacity="0.15" />
+    </linearGradient>
+    
+    <!-- Text Gradient for 'W' -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5A36" />
+      <stop offset="100%" stop-color="#6FFFB0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background shape -->
+  <rect width="96" height="96" x="2" y="2" rx="24" fill="url(#bgGrad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4"/>
+
+  <!-- Logo Mark Text -->
+  <g font-family="'JetBrains Mono', 'Courier New', monospace" font-size="50" font-weight="900" transform="translate(18, 67)">
+    <text x="0" y="0" fill="#ffffff">A</text>
+    <text x="25" y="0" fill="url(#textGrad)">W</text>
+  </g>
 </svg>
