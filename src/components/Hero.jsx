@@ -4,7 +4,7 @@ const Hero = () => {
   const typingRef = useRef(null);
   
   useEffect(() => {
-    const strings = ["Web Developer", "Excel VBA Expert", "Automation Specialist"];
+    const strings = ["a Web Developer", "an Excel VBA Developer", "an Automation Specialist"];
     let stringIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -50,7 +50,7 @@ const Hero = () => {
             <h3 className="hello-text">Hello, It's Me</h3>
             <h1 className="name-text">Aqsa Wazeer</h1>
             <h2 className="role-text">
-                And I'm a <span className="highlight typed-block">
+                And I'm <span className="highlight typed-block">
                     <span className="typing-text" ref={typingRef}></span><span className="cursor"></span>
                 </span>
             </h2>
