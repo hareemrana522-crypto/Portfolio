@@ -9,7 +9,7 @@ const About = () => {
         </div>
         
         <div className="about-container">
-            <div className="about-image glass reveal">
+            <div className="about-image reveal">
                 <img src="profile.jpg.png" alt="Aqsa" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '20px' }} />
             </div>
             
