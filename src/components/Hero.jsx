@@ -54,7 +54,7 @@ const Hero = () => {
                     <span className="typing-text" ref={typingRef}></span><span className="cursor"></span>
                 </span>
             </h2>
-            <p className="desc-text">I design and build production-grade web applications, end-to-end Excel VBA solutions, and Google Workspace automation systems that eliminate manual work and scale business operations.</p>
+            <p className="desc-text">I engineer high-performance web applications and intelligent automation systems. From custom Google Workspace workflows to advanced Excel VBA, I transform complex manual bottlenecks into seamless, scalable digital solutions.</p>
             
             <div className="hero-buttons">
                 <a href="#contact" className="btn btn-primary">Hire Me</a>
