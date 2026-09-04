@@ -335,11 +335,13 @@ header.scrolled {
     width: 100%;
     max-width: 26.25rem;
     border-radius: 30px;
+    filter: drop-shadow(0 20px 40px rgba(255, 90, 54, 0.2));
     transition: var(--transition);
 }
 
 .hero-image img:hover {
     transform: translateY(-10px) scale(1.02);
+    filter: drop-shadow(0 30px 50px rgba(111, 255, 176, 0.3));
 }
 
 /* Hero New Typography */
@@ -486,12 +488,14 @@ section {
     height: 450px;
     border-radius: 30px;
     overflow: hidden;
+    box-shadow: -15px 15px 40px rgba(111, 255, 176, 0.15), 15px -15px 40px rgba(255, 90, 54, 0.15);
     border: 1px solid var(--border-color);
     transition: var(--transition);
 }
 
 .about-image:hover {
     transform: translateY(-10px) scale(1.02);
+    border-color: var(--secondary-color);
 }
 
 .about-text {
