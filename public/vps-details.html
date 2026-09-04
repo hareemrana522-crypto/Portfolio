@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowToSelfHost - Project Details | Aqsa Wazeer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .details-header {
+            padding: 8rem 2rem 3rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .details-title {
+            font-size: 3.5rem;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+            font-family: var(--font-heading);
+            font-weight: 800;
+        }
+        .details-subtitle {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        .details-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+        }
+        
+        /* Project Image */
+        .details-image {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            margin-bottom: 4rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            border: 1px solid var(--border-color);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+        }
+        .details-text h3 {
+            font-size: 2rem;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        .details-text p {
+            color: var(--text-muted);
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .details-text ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 2rem;
+        }
+        .details-text ul li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .details-text ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        .details-sidebar .glass {
+            padding: 2rem;
+            border-radius: 20px;
+            position: sticky;
+            top: 2rem;
+        }
+        .sidebar-item {
+            margin-bottom: 2rem;
+        }
+        .sidebar-item:last-child {
+            margin-bottom: 0;
+        }
+        .sidebar-item h4 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .sidebar-item p, .sidebar-item a {
+            color: var(--text-main);
+            font-size: 1rem;
+            text-decoration: none;
+        }
+        .sidebar-item a:hover {
+            color: var(--primary-color);
+        }
+        .back-link {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        .back-link:hover {
+            color: var(--primary-color);
+        }
+        @media (max-width: 900px) {
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+            .details-sidebar .glass {
+                position: static;
+            }
+            .details-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="glow-bg"></div>
+
+    <a href="index.html#portfolio" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+
+    <div class="details-header reveal">
+        <h1 class="details-title">howtoselfhost.com</h1>
+        <p class="details-subtitle">High-Performance Cloud Server Platform</p>
+    </div>
+
+    <div class="details-content">
+        <!-- Project Image -->
+        <img src="howtoselfhost.png" alt="HowToSelfHost Live Website" class="details-image reveal">
+        
+        <div class="details-grid">
+            <div class="details-text reveal">
+                <h3>The Challenge</h3>
+                <p>The client needed a modern, sleek, and high-converting landing page and dashboard interface for their cloud server hosting company. The platform needed to communicate trust, high performance (99.99% uptime), and seamless onboarding for users seeking bare-metal compute resources.</p>
+                
+                <h3 style="margin-top: 3rem;">The Solution</h3>
+                <p>I architected and developed a full-stack platform using <strong>Node.js</strong> and React. The design is heavily inspired by modern developer-first platforms, utilizing a dark theme with vibrant neon accents to convey speed and reliability.</p>
+                <ul>
+                    <li><strong>Node.js Backend:</strong> Robust and scalable server architecture to handle user onboarding and server deployment requests.</li>
+                    <li><strong>Responsive UI:</strong> Built with Tailwind CSS, ensuring the platform looks flawless across all devices, from ultra-wide monitors to mobile screens.</li>
+                    <li><strong>Performance Optimized:</strong> Fast load times and smooth animations to match the company's "high-performance" brand identity.</li>
+                </ul>
+            </div>
+            
+            <div class="details-sidebar reveal">
+                <div class="glass">
+                    <div class="sidebar-item">
+                        <h4>Client</h4>
+                        <p>HowToSelfHost (VPS Provider)</p>
+                    </div>
+                    <div class="sidebar-item">
+                        <h4>Role</h4>
+                        <p>Full-Stack Developer</p>
+                    </div>
+                    <div class="sidebar-item">
+                        <h4>Tech Stack</h4>
+                        <div class="skill-tags" style="justify-content: flex-start; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Node.js</span>
+                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">React</span>
+                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Tailwind</span>
+                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">JS</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <h4>Live Website</h4>
+                        <a href="https://vps.howtoselfhost.com/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 0.2rem;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

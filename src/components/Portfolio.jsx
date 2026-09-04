@@ -59,12 +59,12 @@ const Portfolio = () => {
               <div className="project-info">
                 <h4>howtoselfhost.com</h4>
                 <p>High-performance cloud server hosting platform frontend with modern, sleek UI design.</p>
-                <div className="skill-tags" style={{ justifyContent: 'flex-start', marginBottom: '1rem' }}>
+                <div className="skill-tags" style={{ justifyContent: 'flex-start', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Node.js</span>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>React</span>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Tailwind</span>
-                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Frontend</span>
                 </div>
-                <a href="https://vps.howtoselfhost.com/" target="_blank" rel="noopener noreferrer" className="btn-text">Live Demo <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="vps-details.html" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
