@@ -21,6 +21,19 @@ function App() {
   }, [isDark]);
 
   useEffect(() => {
+    // Check for hash in URL on initial load and scroll to it
+    if (window.location.hash) {
+      setTimeout(() => {
+        const id = window.location.hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500); // 500ms delay to ensure React has fully rendered the DOM
+    }
+  }, []);
+
+  useEffect(() => {
     // Reveal animations
     const handleScroll = () => {
       const reveals = document.querySelectorAll('.reveal');
