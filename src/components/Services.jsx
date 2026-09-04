@@ -45,7 +45,7 @@ const Services = () => {
             <div 
               key={service.id} 
               className={`service-tab ${activeService === service.id ? 'active' : ''}`}
-              onClick={() => setActiveService(service.id)}
+              onMouseEnter={() => setActiveService(service.id)}
             >
               <h3>{service.title}</h3>
             </div>
