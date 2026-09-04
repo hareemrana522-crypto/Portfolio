@@ -4,7 +4,7 @@ const Hero = () => {
   const typingRef = useRef(null);
   
   useEffect(() => {
-    const strings = ["a Web Developer", "an Excel VBA Developer", "an Automation Specialist"];
+    const strings = ["a Web Developer", "an Excel VBA Developer", "an Automation Specialist", "a Google Workspace Expert"];
     let stringIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -54,7 +54,7 @@ const Hero = () => {
                     <span className="typing-text" ref={typingRef}></span><span className="cursor"></span>
                 </span>
             </h2>
-            <p className="desc-text">I design and build production-grade web applications, and end-to-end Excel VBA automation systems that eliminate manual work and scale business operations.</p>
+            <p className="desc-text">I design and build production-grade web applications, end-to-end Excel VBA solutions, and Google Workspace automation systems that eliminate manual work and scale business operations.</p>
             
             <div className="hero-buttons">
                 <a href="#contact" className="btn btn-primary">Hire Me</a>
