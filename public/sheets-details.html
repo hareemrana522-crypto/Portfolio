@@ -157,6 +157,22 @@
                 font-size: 2.5rem;
             }
         }
+        .screenshot-gallery {
+            margin: 3rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .screenshot-gallery img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+        .screenshot-gallery img:hover {
+            transform: scale(1.05);
+            border-color: var(--primary-color);
+        }
     </style>
 </head>
 <body>
@@ -194,6 +210,12 @@
                     <li><strong>Automated Compensation Engine:</strong> Consolidates base salaries, attendance incentives, and sales commission tiers into final payouts.</li>
                     <li><strong>Background Email Automation:</strong> Daily serverless Apps Script trigger scanning records at 9:00 AM to email HR action alerts directly.</li>
                 </ul>
+
+                <div class="screenshot-gallery reveal">
+                    <img src="sheets_hr_directory.jpg" alt="Master Staff Directory">
+                    <img src="sheets_hr_compensation.jpg" alt="Automated Compensation Engine">
+                    <img src="sheets_hr_email.jpg" alt="Background Email Automation">
+                </div>
 
                 <h3>Key Results</h3>
                 <ul>
