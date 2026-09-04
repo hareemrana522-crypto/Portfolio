@@ -27,9 +27,11 @@ function App() {
         const id = window.location.hash.replace('#', '');
         const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          element.scrollIntoView();
+          // Remove hash from URL so that refreshing the page stays at the top
+          window.history.replaceState(null, null, window.location.pathname);
         }
-      }, 500); // 500ms delay to ensure React has fully rendered the DOM
+      }, 300); // 300ms delay to ensure React has fully rendered the DOM
     }
   }, []);
 
