@@ -1,24 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <!-- Background Gradient (low opacity) -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF5A36" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#6FFFB0" stop-opacity="0.15" />
-    </linearGradient>
-    
-    <!-- Text Gradient for 'W' -->
     <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FF5A36" />
       <stop offset="100%" stop-color="#6FFFB0" />
     </linearGradient>
   </defs>
+  
+  <!-- Solid dark background -->
+  <rect width="100" height="100" rx="25" fill="#14161c"/>
 
-  <!-- Background shape -->
-  <rect width="96" height="96" x="2" y="2" rx="24" fill="url(#bgGrad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4"/>
-
-  <!-- Logo Mark Text -->
-  <g font-family="'JetBrains Mono', 'Courier New', monospace" font-size="50" font-weight="900" transform="translate(18, 67)">
-    <text x="0" y="0" fill="#ffffff">A</text>
-    <text x="25" y="0" fill="url(#textGrad)">W</text>
-  </g>
+  <!-- Large centered AW -->
+  <text x="48" y="53" 
+        font-family="'Arial', sans-serif" 
+        font-size="65" 
+        font-weight="900" 
+        text-anchor="middle" 
+        dominant-baseline="central"
+        letter-spacing="-2">
+    <tspan fill="#ffffff">A</tspan><tspan fill="url(#textGrad)">W</tspan>
+  </text>
 </svg>
