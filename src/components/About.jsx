@@ -10,14 +10,7 @@ const About = () => {
         
         <div className="about-container">
             <div className="about-image glass reveal">
-                <img src="profile.jpg.png" alt="Aqsa" style={{ 
-                    width: '100%', 
-                    height: '100%', 
-                    objectFit: 'cover', 
-                    borderRadius: '20px',
-                    WebkitMaskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)',
-                    maskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)'
-                }} />
+                <img src="profile.jpg.png" alt="Aqsa" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '20px' }} />
             </div>
             
             <div className="about-text glass reveal">

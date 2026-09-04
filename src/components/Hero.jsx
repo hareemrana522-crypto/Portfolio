@@ -70,10 +70,7 @@ const Hero = () => {
         </div>
         <div className="hero-image reveal">
             <div className="image-container">
-                <img src="profile.jpg.png" alt="Aqsa Wazeer" style={{ 
-                    WebkitMaskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)',
-                    maskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)'
-                }} />
+                <img src="profile.jpg.png" alt="Aqsa Wazeer" />
             </div>
         </div>
       </div>
