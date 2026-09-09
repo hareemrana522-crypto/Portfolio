@@ -92,15 +92,16 @@ const Portfolio = () => {
             
             <div className="project-card glass reveal">
               <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="excel2_thumbnail.jpg" alt="Corporate Financial Reporting Tool" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                <img src="excel2_thumbnail.jpg" alt="Automated Bank Reconciliation & Audit Console" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
-                <h4>Corporate Financial Reporting Tool</h4>
-                <p>Automated macro script that consolidates 50+ Excel sheets into one unified financial report in seconds.</p>
-                <div className="skill-tags" style={{ justifyContent: 'flex-start', marginBottom: '1rem' }}>
-                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Power Query</span>
-                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>VBA</span>
-                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Macros</span>
+                <h4>Automated Bank Reconciliation & Audit Console</h4>
+                <p>Enterprise-grade financial reconciliation engine with fuzzy matching algorithms and automated audit trails.</p>
+                <div className="skill-tags" style={{ justifyContent: 'flex-start', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Excel VBA</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Fuzzy Matching</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>UserForms</span>
+                  <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Audit Trail</span>
                 </div>
                 <a href="excel2-details.html" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
               </div>

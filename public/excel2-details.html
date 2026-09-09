@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Sheets Automation | Aqsa Wazeer</title>
+    <title>Bank Reconciliation & Audit Console | Aqsa Wazeer</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -173,6 +173,32 @@
             transform: scale(1.05);
             border-color: var(--primary-color);
         }
+        /* Quick Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        .stat-card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .stat-card h4 {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        .stat-card p {
+            color: var(--text-main);
+            font-size: 1rem;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -182,41 +208,78 @@
     <a href="/#portfolio" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
 
     <div class="details-header reveal">
-        <h1 class="details-title">Corporate Financial Reporting Tool</h1>
-        <p class="details-subtitle">Automated macro script that consolidates 50+ Excel sheets into one unified financial report in seconds.</p>
+        <h1 class="details-title">Automated Bank Reconciliation & Audit Console</h1>
+        <p class="details-subtitle">Enterprise-grade financial reconciliation engine built with Excel VBA, fuzzy matching algorithms, and automated audit trails.</p>
     </div>
 
     <div class="details-content">
+        <!-- Quick Stats -->
+        <div class="stats-grid reveal">
+            <div class="stat-card">
+                <h4>Core Tech</h4>
+                <p>Excel VBA, Levenshtein Distance, UserForms, Dictionary Objects</p>
+            </div>
+            <div class="stat-card">
+                <h4>Impact</h4>
+                <p>90%+ time reduction on month-end closing</p>
+            </div>
+            <div class="stat-card">
+                <h4>Matching Precision</h4>
+                <p>3-tier logic (Exact, ±2-day tolerance, ≥70% string similarity)</p>
+            </div>
+            <div class="stat-card">
+                <h4>Output</h4>
+                <p>Audit-ready landscape PDF export & append-only transaction logging</p>
+            </div>
+        </div>
+
         <!-- Browser Mockup Image -->
         <div class="browser-mockup reveal">
-            <!-- REPLACE THIS VIDEO WITH YOUR ACTUAL EXCEL VIDEO -->
-            <video src="googe.mp4" autoplay loop muted playsinline></video>
+            <!-- REPLACE WITH YOUR ACTUAL VIDEO -->
+            <img src="excel2_thumbnail.jpg" alt="Bank Reconciliation Dashboard">
         </div>
         
         <div class="details-grid">
             <div class="details-text reveal">
-                <h3>The Challenge</h3>
-                <p>Generating monthly financial reports required manually opening, copying, and pasting data from over 50 department-specific Excel sheets. This process took several hours, was prone to copy-paste errors, and delayed critical business decisions.</p>
-                
-                <h3>The Solution</h3>
-                <p>A robust Excel VBA system using Power Query to automate the entire data consolidation pipeline:</p>
+                <h3>The Problem</h3>
+                <p>Corporate finance departments lose hours each month manually cross-referencing bank statements against general ledger transactions. Traditional spreadsheet setups rely on fragile <code>VLOOKUP</code> or <code>INDEX/MATCH</code> formulas that fail whenever:</p>
                 <ul>
-                    <li><strong>One-Click Consolidation:</strong> A master macro that loops through a designated folder, extracts required financial metrics, and appends them to a master database.</li>
-                    <li><strong>Data Cleansing:</strong> Automated formatting and error-checking during data ingestion to ensure 100% data integrity.</li>
-                    <li><strong>Dynamic Dashboarding:</strong> The consolidated data feeds directly into pivot tables and interactive charts, providing instant executive insights.</li>
+                    <li>Vendor descriptions contain typos or abbreviations (e.g., <em>AWS Cloud</em> vs. <em>Amazon Web Svcs</em>).</li>
+                    <li>Bank clearing dates differ from ledger recording dates.</li>
+                    <li>Duplicate transactions or split payments skew line balances.</li>
+                </ul>
+                
+                <h3>The Solution & System Architecture</h3>
+                <p>I designed and developed an automated end-to-end reconciliation system that runs entirely inside Excel, providing software-level precision without requiring external SaaS subscriptions.</p>
+
+                <h4>Dual-Source Ingestion Engine</h4>
+                <p>Dynamic file-picker UserForm (<code>frmImportFiles</code>) imports inconsistent CSV/XLSX statements, validates schemas, and flags internal duplicates before processing.</p>
+
+                <h4>Intelligent Multi-Pass Matching</h4>
+                <ul>
+                    <li><strong>Pass 1 (Deterministic):</strong> Exact pairing based on reference numbers, cash-flow type (Deposit/Withdrawal), and exact amounts.</li>
+                    <li><strong>Pass 2 (Fuzzy Logic & Date Tolerance):</strong> Employs a custom Levenshtein Distance algorithm to calculate string distance alongside a 2-day date tolerance window for ambiguous entries.</li>
+                    <li><strong>Pass 3 (Discrepancy Triage):</strong> Automatically separates items into <code>Matched</code>, <code>Partially Matched</code>, <code>Unmatched Bank</code>, and <code>Unmatched Ledger</code>.</li>
                 </ul>
 
+                <h4>Interactive Controller Review Portal</h4>
+                <p>Custom UserForm (<code>frmManualReview</code>) displaying potential match pairs side-by-side, allowing financial controllers to confirm or decouple suggested records.</p>
+
+                <h4>Audit Trail & Executive Reporting</h4>
+                <p>Every action (import, manual verification, decoupling) is logged to an immutable audit trail with timestamps and user details. Outputs an executive-ready balance report with one-click PDF generation.</p>
+
                 <div class="screenshot-gallery reveal">
-                    <!-- REPLACE THESE IMAGES WITH YOUR ACTUAL EXCEL PROJECT IMAGES -->
-                    <img src="dummy_vba.jpg" alt="VBA Code Editor">
-                    <img src="excel_screenshot.jpg" alt="Master Dashboard">
+                    <!-- REPLACE THESE WITH YOUR ACTUAL PROJECT IMAGES -->
+                    <img src="excel2_thumbnail.jpg" alt="Command Console Dashboard">
+                    <img src="excel_screenshot.jpg" alt="Reconciliation Report">
                 </div>
 
-                <h3>Key Results</h3>
+                <h3>Key Technical Features</h3>
                 <ul>
-                    <li><strong>Time Saved:</strong> Reduced report generation time from 8 hours to under 30 seconds.</li>
-                    <li><strong>Accuracy:</strong> Eliminated 100% of human copy-paste errors.</li>
-                    <li><strong>Ease of Use:</strong> Provided a simple "Update Report" button, allowing non-technical staff to generate complex reports effortlessly.</li>
+                    <li><strong>Levenshtein Distance Algorithm:</strong> Implemented natively in VBA for typo-tolerant matching without external dependencies.</li>
+                    <li><strong>Zero-Formula Backend:</strong> All matching logic executes via VBA arrays and memory dictionaries for instant processing of high row counts.</li>
+                    <li><strong>Audit-Compliant:</strong> Immutable logging ensures complete transparency for internal and external corporate auditors.</li>
+                    <li><strong>One-Click Delivery:</strong> Automates print layout, headers, and landscape PDF generation saved directly to local storage.</li>
                 </ul>
             </div>
             
@@ -228,15 +291,19 @@
                     </div>
                     <div class="sidebar-item">
                         <h4>Category</h4>
-                        <p>Financial Automation</p>
+                        <p>Financial Reconciliation</p>
+                    </div>
+                    <div class="sidebar-item">
+                        <h4>Impact</h4>
+                        <p>90%+ time reduction</p>
                     </div>
                     <div class="sidebar-item">
                         <h4>Tech Stack</h4>
                         <div class="skill-tags" style="justify-content: flex-start; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
                             <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Excel VBA</span>
-                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Power Query</span>
-                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Macros</span>
-                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Dashboards</span>
+                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Levenshtein Distance</span>
+                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">UserForms</span>
+                            <span class="skill-badge" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Dictionary Objects</span>
                         </div>
                     </div>
                 </div>
