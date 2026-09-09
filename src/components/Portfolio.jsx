@@ -92,7 +92,7 @@ const Portfolio = () => {
             
             <div className="project-card glass reveal">
               <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="dummy_vba.jpg" alt="Corporate Financial Reporting Tool" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                <img src="excel2_thumbnail.jpg" alt="Corporate Financial Reporting Tool" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
                 <h4>Corporate Financial Reporting Tool</h4>
@@ -102,7 +102,7 @@ const Portfolio = () => {
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>VBA</span>
                   <span className="skill-badge" style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem' }}>Macros</span>
                 </div>
-                <a href="#" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
+                <a href="excel2-details.html" className="btn-text">View Details <i className="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
