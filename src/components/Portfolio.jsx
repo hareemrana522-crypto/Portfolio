@@ -92,7 +92,7 @@ const Portfolio = () => {
             
             <div className="project-card glass reveal">
               <div className="project-image" style={{ height: '240px', backgroundColor: '#1a1a2e', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-                <img src="excel2_thumbnail.jpg" alt="Automated Bank Reconciliation & Audit Console" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                <img src="excel2_main.jpg" alt="Automated Bank Reconciliation & Audit Console" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div className="project-info">
                 <h4>Automated Bank Reconciliation & Audit Console</h4>
