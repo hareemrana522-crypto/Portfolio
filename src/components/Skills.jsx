@@ -52,10 +52,10 @@ const Skills = () => {
                   <div className="icon-wrapper">
                       <i className="fa-solid fa-toolbox"></i>
                   </div>
-                  <h3>Tools & Platforms</h3>
+                  <h3>Tools &amp; Platforms</h3>
               </div>
               <div className="skill-tags">
-                  <span className="skill-badge">Git & GitHub</span>
+                  <span className="skill-badge">Git &amp; GitHub</span>
                   <span className="skill-badge">VS Code</span>
                   <span className="skill-badge">Postman</span>
                   <span className="skill-badge">Vercel</span>
@@ -81,6 +81,25 @@ const Skills = () => {
                   <span className="skill-badge">Google Forms</span>
                   <span className="skill-badge">AppScript</span>
                   <span className="skill-badge">Automation</span>
+              </div>
+          </div>
+
+          {/* Skill 5 - Power Automate */}
+          <div className="service-card glass reveal">
+              <div className="card-header">
+                  <div className="icon-wrapper">
+                      <i className="fa-solid fa-robot"></i>
+                  </div>
+                  <h3>Power Automate</h3>
+              </div>
+              <div className="skill-tags">
+                  <span className="skill-badge">Desktop Flows</span>
+                  <span className="skill-badge">UI Automation</span>
+                  <span className="skill-badge">RPA</span>
+                  <span className="skill-badge">Web Scraping</span>
+                  <span className="skill-badge">File Automation</span>
+                  <span className="skill-badge">Excel Integration</span>
+                  <span className="skill-badge">Scheduled Flows</span>
               </div>
           </div>
       </div>
