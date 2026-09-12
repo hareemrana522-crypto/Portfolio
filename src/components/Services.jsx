@@ -24,6 +24,12 @@ const servicesData = [
     title: 'Business Automation',
     icon: 'fa-solid fa-network-wired',
     desc: 'I bridge the gap between your favorite apps. By integrating third-party APIs and building custom middleware, I ensure your CRM, accounting software, and operational tools talk to each other flawlessly.'
+  },
+  {
+    id: 'powerautomate',
+    title: 'Power Automate Desktop',
+    icon: 'fa-solid fa-robot',
+    desc: 'I build powerful RPA (Robotic Process Automation) flows using Microsoft Power Automate Desktop. From automating repetitive web tasks to processing files and integrating with Excel — I turn manual workflows into fully automated, scheduled desktop flows with zero coding required.'
   }
 ];
 
