@@ -45,28 +45,8 @@ const Skills = () => {
                   <span className="skill-badge">Reporting</span>
               </div>
           </div>
-          
-          {/* Skill 3 */}
-          <div className="service-card glass reveal">
-              <div className="card-header">
-                  <div className="icon-wrapper">
-                      <i className="fa-solid fa-toolbox"></i>
-                  </div>
-                  <h3>Tools &amp; Platforms</h3>
-              </div>
-              <div className="skill-tags">
-                  <span className="skill-badge">Git &amp; GitHub</span>
-                  <span className="skill-badge">VS Code</span>
-                  <span className="skill-badge">Postman</span>
-                  <span className="skill-badge">Vercel</span>
-                  <span className="skill-badge">ChatGPT</span>
-                  <span className="skill-badge">Figma</span>
-                  <span className="skill-badge">NPM</span>
-                  <span className="skill-badge">DevTools</span>
-              </div>
-          </div>
 
-          {/* Skill 4 */}
+          {/* Skill 3 */}
           <div className="service-card glass reveal">
               <div className="card-header">
                   <div className="icon-wrapper mint">
@@ -84,7 +64,7 @@ const Skills = () => {
               </div>
           </div>
 
-          {/* Skill 5 - Power Automate */}
+          {/* Skill 4 - Power Automate */}
           <div className="service-card glass reveal">
               <div className="card-header">
                   <div className="icon-wrapper">
@@ -100,6 +80,26 @@ const Skills = () => {
                   <span className="skill-badge">File Automation</span>
                   <span className="skill-badge">Excel Integration</span>
                   <span className="skill-badge">Scheduled Flows</span>
+              </div>
+          </div>
+
+          {/* Skill 5 - Tools & Platforms (last) */}
+          <div className="service-card glass reveal">
+              <div className="card-header">
+                  <div className="icon-wrapper">
+                      <i className="fa-solid fa-toolbox"></i>
+                  </div>
+                  <h3>Tools &amp; Platforms</h3>
+              </div>
+              <div className="skill-tags">
+                  <span className="skill-badge">Git &amp; GitHub</span>
+                  <span className="skill-badge">VS Code</span>
+                  <span className="skill-badge">Postman</span>
+                  <span className="skill-badge">Vercel</span>
+                  <span className="skill-badge">ChatGPT</span>
+                  <span className="skill-badge">Figma</span>
+                  <span className="skill-badge">NPM</span>
+                  <span className="skill-badge">DevTools</span>
               </div>
           </div>
       </div>
