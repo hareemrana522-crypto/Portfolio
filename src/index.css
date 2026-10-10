@@ -39,6 +39,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 115%;
 }
 
 body {
@@ -202,7 +203,7 @@ header.scrolled {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -341,7 +342,7 @@ header.scrolled {
 }
 
 .hero-container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -499,7 +500,7 @@ section {
 
 /* ==== ABOUT SECTION ==== */
 .about {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -573,7 +574,7 @@ section {
 
 /* ==== SERVICES / SKILLS ==== */
 .services {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -669,7 +670,7 @@ section {
 
 /* ==== PORTFOLIO SECTION ==== */
 .portfolio {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -1061,6 +1062,10 @@ footer {
 
 /* ==== GLOBAL MOBILE RESPONSIVE ==== */
 @media (max-width: 600px) {
+    html {
+        font-size: 95%;
+    }
+    
     body {
         font-size: 15px;
     }
