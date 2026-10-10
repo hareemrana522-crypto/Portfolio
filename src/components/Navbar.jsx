@@ -25,7 +25,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
           </div>
           <div className="logo-text">Aqsa<span>.</span></div>
         </a>
-        <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+        <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <a href="#home" className="active" onClick={handleLinkClick}>Home</a>
           <a href="#about" onClick={handleLinkClick}>About</a>
           <a href="#skills" onClick={handleLinkClick}>Skills</a>

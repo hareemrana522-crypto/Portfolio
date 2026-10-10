@@ -48,7 +48,6 @@ body {
     line-height: 1.6;
     transition: var(--transition);
     overflow-x: hidden;
-    zoom: 1.25;
 }
 
 ::selection {
@@ -289,6 +288,36 @@ header.scrolled {
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--text-main);
+    background: none;
+    border: none;
+    padding: 0.3rem;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+        background: rgba(12, 13, 18, 0.97);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid var(--border-color);
+        z-index: 999;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    header {
+        position: fixed;
+    }
 }
 
 .theme-toggle {
@@ -685,7 +714,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
@@ -1028,4 +1057,82 @@ footer {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ==== GLOBAL MOBILE RESPONSIVE ==== */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 3rem 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .name-text {
+        font-size: 2.2rem;
+    }
+
+    .role-text {
+        font-size: 1.4rem;
+    }
+
+    .hero {
+        padding: 8rem 1rem 4rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text {
+        padding: 1.5rem;
+    }
+
+    .about-stats {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .contact-container {
+        padding: 1.5rem;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .portfolio-tabs {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-content-inner h3 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
 }
